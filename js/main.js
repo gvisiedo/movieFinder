@@ -11,7 +11,7 @@ btnBuscar.addEventListener('click', async function(){
             resultado.textContent = 'Buscando ...'
             const datos = await buscarPelicula(movieInput.value)
 
-            if(datos.error){
+            if(datos.Response === false){
                 resultado.textContent = 'Esta pelicula no existe'
             }else{
                 
