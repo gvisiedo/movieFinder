@@ -1,13 +1,13 @@
 const resultado = document.querySelector('#resultado')
 const lista = document.querySelector('#lista')
 
-export function mostrarPeliculas(Title, Year, Genre, Director){
-            resultado.textContent = `Pelicula: ${Title}, Año: ${Year}, Género: ${Genre}, Director: ${Director}`
+export function mostrarPeliculas(title, year, genre, director){
+            resultado.textContent = `Pelicula: ${title}, Año: ${year}, Género: ${genre}, Director: ${director}`
 }
 
-export function historialPeliculas(Title, Year, Genre, Director){
+export function historialPeliculas(title, year, genre, director){
     const nuevoLi = document.createElement('li')//creamos la lista
-    nuevoLi.textContent = `Pelicula: ${Title}, Año: ${Year}, Género: ${Genre}, Director: ${Director}`
+    nuevoLi.textContent = `Pelicula: ${title}, Año: ${year}, Género: ${genre}, Director: ${director}`
     const btnEliminar = document.createElement('button')
     btnEliminar.textContent = 'Eliminar'
     btnEliminar.addEventListener('click', function(){
